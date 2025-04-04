@@ -1,0 +1,44 @@
+{
+    "navbar": {
+        "title": "一灯大学",
+        "connect": "连接钱包",
+        "disconnect": "断开连接",
+        "language": "语言"
+    },
+    "home": {
+        "title": "探索我们的课程",
+        "purchased": "您已购买的课程",
+        "buy": "立即购买",
+        "completed": "已完成",
+        "certificate": "查看证书",
+        "welcome": "欢迎来到Web3学院！",
+        "welcomeDescription": "通过React、Next.js等技术掌握Web3开发。",
+        "courses": "课程",
+        "support": "支持",
+        "students": "学生",
+        "popularCourses": "热门课程",
+        "findCourses": "寻找最适合您的课程",
+        "noCourses": "目前没有可用的课程",
+        "refreshCourses": "刷新课程",
+        "loading": "加载中..."
+    },
+    "course": {
+        "details": "课程详情",
+        "instructor": "讲师",
+        "duration": "时长",
+        "level": "难度级别",
+        "reviews": "评价",
+        "syllabus": "课程大纲"
+    },
+    "wallet": {
+        "buyTokens": "购买YD代币",
+        "balance": "余额",
+        "youPay": "您支付 (ETH)",
+        "youGet": "您获得 (YD)",
+        "buyNow": "立即购买"
+    },
+    "dateFormat": "{{date, YYYY年MM月DD日}}",
+    "currency": "YD",
+    "pleaseConnectWallet": "请先连接您的钱包",
+    "coursePurchasedSuccessfully": "课程购买成功！"
+}

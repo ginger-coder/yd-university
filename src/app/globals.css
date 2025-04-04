@@ -1,0 +1,15 @@
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
+
+body {
+    @apply bg-gradient-to-b from-[#1A1A2E] to-[#16213E] text-white antialiased;
+}
+
+.particle-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

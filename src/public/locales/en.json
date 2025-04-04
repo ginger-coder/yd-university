@@ -1,0 +1,44 @@
+{
+    "navbar": {
+        "title": "YiDeng University",
+        "connect": "Connect Wallet",
+        "disconnect": "Disconnect",
+        "language": "Language"
+    },
+    "home": {
+        "title": "Explore Our Courses",
+        "purchased": "Your Purchased Courses",
+        "buy": "Buy Now",
+        "completed": "Completed",
+        "certificate": "View Certificate",
+        "welcome": "Welcome to Web3 College!",
+        "welcomeDescription": "Master Web3 development with technologies like React, Next.js, and more.",
+        "courses": "Courses",
+        "support": "Support",
+        "students": "Students",
+        "popularCourses": "Popular Courses",
+        "findCourses": "Find the best courses tailored for you",
+        "noCourses": "No courses available at the moment",
+        "refreshCourses": "Refresh Courses",
+        "loading": "Loading..."
+    },
+    "course": {
+        "details": "Course Details",
+        "instructor": "Instructor",
+        "duration": "Duration",
+        "level": "Level",
+        "reviews": "Reviews",
+        "syllabus": "Syllabus"
+    },
+    "wallet": {
+        "buyTokens": "Buy YD Tokens",
+        "balance": "Balance",
+        "youPay": "You pay (ETH)",
+        "youGet": "You get (YD)",
+        "buyNow": "Buy Now"
+    },
+    "dateFormat": "{{date, MMMM D, YYYY}}",
+    "currency": "YD",
+    "pleaseConnectWallet": "Please connect your wallet first",
+    "coursePurchasedSuccessfully": "Course purchased successfully!"
+}

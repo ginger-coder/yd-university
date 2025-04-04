@@ -1,0 +1,359 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_tokenAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "_certificateAddress",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "courseId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "name": "CourseAdded",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "student",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "courseId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "certificateId",
+                "type": "uint256"
+            }
+        ],
+        "name": "CourseCompleted",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "buyer",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "courseId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            }
+        ],
+        "name": "CoursePurchased",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "courseId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "isActive",
+                "type": "bool"
+            }
+        ],
+        "name": "CourseStatusUpdated",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            },
+            { "internalType": "string", "name": "name", "type": "string" },
+            { "internalType": "uint256", "name": "price", "type": "uint256" }
+        ],
+        "name": "addCourse",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "students",
+                "type": "address[]"
+            },
+            {
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            }
+        ],
+        "name": "batchVerifyCourseCompletion",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "certificate",
+        "outputs": [
+            {
+                "internalType": "contract CourseCertificate",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "courseCount",
+        "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+        ],
+        "name": "courses",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            },
+            { "internalType": "string", "name": "name", "type": "string" },
+            { "internalType": "uint256", "name": "price", "type": "uint256" },
+            { "internalType": "bool", "name": "isActive", "type": "bool" },
+            { "internalType": "address", "name": "creator", "type": "address" }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "uint256", "name": "courseId", "type": "uint256" }
+        ],
+        "name": "getCourse",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "string",
+                        "name": "web2CourseId",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "price",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "bool",
+                        "name": "isActive",
+                        "type": "bool"
+                    },
+                    {
+                        "internalType": "address",
+                        "name": "creator",
+                        "type": "address"
+                    }
+                ],
+                "internalType": "struct CourseMarket.Course",
+                "name": "",
+                "type": "tuple"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address", "name": "user", "type": "address" },
+            {
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            }
+        ],
+        "name": "hasCourse",
+        "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            { "internalType": "address", "name": "", "type": "address" }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            }
+        ],
+        "name": "purchaseCourse",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address", "name": "newOwner", "type": "address" }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "courseId",
+                "type": "uint256"
+            },
+            { "internalType": "bool", "name": "isActive", "type": "bool" }
+        ],
+        "name": "updateCourseStatus",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+        ],
+        "name": "userCourses",
+        "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address", "name": "student", "type": "address" },
+            {
+                "internalType": "string",
+                "name": "web2CourseId",
+                "type": "string"
+            }
+        ],
+        "name": "verifyCourseCompletion",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "string", "name": "", "type": "string" }],
+        "name": "web2ToCourseId",
+        "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "yiDengToken",
+        "outputs": [
+            {
+                "internalType": "contract YiDengToken",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
