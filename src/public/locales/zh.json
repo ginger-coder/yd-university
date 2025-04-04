@@ -35,7 +35,10 @@
         "balance": "余额",
         "youPay": "您支付 (ETH)",
         "youGet": "您获得 (YD)",
-        "buyNow": "立即购买"
+        "buyNow": "立即购买",
+        "buying": "正在购买YD代币...",
+        "invalidAmount": "无效的金额",
+        "buyFailed": "购买失败，请检查您的钱包余额和网络连接。"
     },
     "dateFormat": "{{date, YYYY年MM月DD日}}",
     "currency": "YD",

@@ -35,7 +35,10 @@
         "balance": "Balance",
         "youPay": "You pay (ETH)",
         "youGet": "You get (YD)",
-        "buyNow": "Buy Now"
+        "buyNow": "Buy Now",
+        "buying": "Buying YD Tokens...",
+        "invalidAmount": "Invalid amount",
+        "buyFailed": "Purchase failed. Please check your wallet balance and network connection."
     },
     "dateFormat": "{{date, MMMM D, YYYY}}",
     "currency": "YD",

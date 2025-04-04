@@ -108,7 +108,7 @@ const Home: React.FC = () => {
 
     const handleRecharge = async () => {
         if (!address) {
-            toast.error(t("wallet.connectWallet"), {
+            toast.error(t("pleaseConnectWallet"), {
                 style: {
                     background: "#2A2A3E",
                     color: "#FFFFFF",
